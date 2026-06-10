@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+        int i, j;
+
+            // Outer loop for the number of rows (starts at 5 and goes down to 2)
+                for (i = 5; i >= 2; i--) {
+                            // Inner loop to print numbers from 1 to the current value of 'i'
+                                    for (j = 1; j <= i; j++) {
+                                                    printf("%d", j);
+                                    }
+                                            // Move to the next line after printing each row
+                                                    printf("\n");
+                }
+
+                    return 0;
+}
+
+                                    }
+                }
+}
