@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main() {
+        // 1. Initialize the two source arrays
+            int arr1[] = {10, 20, 30, 40};
+                int arr2[] = {50, 60, 70};
+
+                    // 2. Calculate the size (number of elements) of both arrays
+                        int size1 = sizeof(arr1) / sizeof(arr1[0]);
+                            int size2 = sizeof(arr2) / sizeof(arr2[0]);
+                                int mergedSize = size1 + size2;
+
+                                    // 3. Declare the third array to hold the merged elements
+                                        int mergedArr[mergedSize];
+
+                                            int i, j;
+
+                                                // 4. Copy elements of the first array into the merged array
+                                                    for (i = 0; i < size1; i++) {
+                                                                mergedArr[i] = arr1[i];
+                                                    }
+
+                                                        // 5. Copy elements of the second array into the merged array
+                                                            // Notice that we start indexing the merged array from 'size1'
+                                                                for (j = 0; j < size2; j++) {
+                                                                            mergedArr[size1 + j] = arr2[j];
+                                                                }
+
+                                                                    // 6. Print the final merged array
+                                                                        printf("Merged Array: \n");
+                                                                            for (i = 0; i < mergedSize; i++) {
+                                                                                        printf("%d ", mergedArr[i]);
+                                                                            }
+                                                                                printf("\n");
+
+                                                                                    return 0;
+}
+
+                                                                            }
+                                                                }
+                                                    }
+}
